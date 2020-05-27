@@ -1,0 +1,7 @@
+multiplicacion(_,B,0):-B=0.
+multiplicacion(A,B,R):-B>0,
+T is B-1,
+multiplicacion(A,T,P),
+R is A+P.
+
+% Prueba multiplicacion(11,2,R). 
